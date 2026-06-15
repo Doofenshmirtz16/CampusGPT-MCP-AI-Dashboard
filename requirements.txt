@@ -1,15 +1,15 @@
 fastapi
 uvicorn
-requests
 python-dotenv
 
 google-generativeai
 
+requests
+
 chromadb
 sentence-transformers
 
+pymupdf
 numpy
 
 pydantic
-
-psycopg2-binary
