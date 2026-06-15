@@ -1,12 +1,11 @@
 import requests
-
+import os
 from backend.agent.llm_router import decide_tools
 
-LIBRARY_URL = "http://localhost:8001"
-EVENTS_URL = "http://localhost:8002"
-CAFETERIA_URL = "http://localhost:8003"
-ACADEMIC_URL = "http://localhost:8004"
-
+LIBRARY_URL = os.getenv("LIBRARY_URL")
+EVENTS_URL = os.getenv("EVENTS_URL")
+CAFETERIA_URL = os.getenv("CAFETERIA_URL")
+ACADEMIC_URL = os.getenv("ACADEMIC_URL")
 
 def route_query(user_query):
 
